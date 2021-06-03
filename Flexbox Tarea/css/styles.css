@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+/*General*/
+body {
+  background: linear-gradient(aquamarine, darkcyan);
+  font-family: "Antonio", sans-serif;
+  color: ghostwhite;
+  margin: 0;
+}
+
+a {
+  color: indigo;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/*Encabezado*/
+header {
+  display: flex;
+  width: 100%;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  padding: 10px 0;
+}
+header div {
+  width: 200px;
+  margin-top: 10px;
+}
+header div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid ghostwhite;
+}
+@media (max-width: 414px) {
+  header {
+    flex-direction: column;
+    font-size: 13px;
+  }
+  header div {
+    width: 100px;
+    margin-top: 10px;
+  }
+  header ul {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+/*Secciones*/
+main {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
+  main {
+    flex-direction: column;
+  }
+  main section {
+    width: 92%;
+  }
+}
+@media (max-width: 414px) {
+  main {
+    flex-direction: column;
+  }
+}
+main section:first-child {
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+main section:nth-child(2n) {
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+main section:last-child {
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 33%);
+}
+
+section {
+  border-radius: 5px;
+  color: black;
+  font-weight: 100;
+  padding: 20px;
+  margin: 10px;
+  width: 88%;
+}
+section h2 {
+  text-transform: uppercase;
+  font-style: italic;
+  margin: 0;
+}
+@media (max-width: 414px) {
+  section {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  background-color: mediumseagreen;
+  border-radius: 5px;
+  padding: 5px 0;
+  margin: 0 10px 10px 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
