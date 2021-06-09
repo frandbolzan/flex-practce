@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    background: #78BBCB;
+}
+
+header{
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Patua One', cursive;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    section:first-child, section:last-child{
+        height: 75%;
+    }
+    section:nth-child(2), section:nth-child(4){
+        height: 50%;
+    }
+}
+
+section{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* -----------GIFS---------- */
+.worms{
+    width: 75px;
+}
+
+.clocks{
+    width: 60px;
+}
+
+#bell01{
+    width: 50px;
+}
+#bell02{
+    width: 85px;
+}
+
+.toaster_big{
+    width: 100px;
+}
+
+.toaster_small{
+    width: 75px;
+}
+
+.mouth{
+    width: 100px;
+}
